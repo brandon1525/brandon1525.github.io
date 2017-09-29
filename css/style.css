@@ -19,6 +19,12 @@ p {
   color: #26a69a;
 }
 
+.fw-icon {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+
 .parallax-container1 {
   min-height: 500px;
   line-height: 0;
@@ -30,10 +36,6 @@ p {
   }
 
 @media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
   #index-banner .section {
     top: 10%;
   }
