@@ -1,0 +1,3 @@
+User-Agent: *
+
+Sitemap: brandon1525.github.io/sitemap.xml
