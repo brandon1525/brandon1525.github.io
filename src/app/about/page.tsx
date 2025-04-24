@@ -191,7 +191,7 @@ export default function About() {
                 {social.map(
                   (item) =>
                     item.link && (
-                      <>
+                      <div key={item.name}>
                         <Button
                           className="s-flex-hide"
                           key={item.name}
@@ -209,7 +209,7 @@ export default function About() {
                           icon={item.icon}
                           variant="secondary"
                         />
-                      </>
+                      </div>
                     )
                 )}
               </Flex>
@@ -228,7 +228,7 @@ export default function About() {
           )}
 
           {about.work.display && (
-            <>
+            <div key={about.work.title}>
               <Heading
                 as="h2"
                 id={about.work.title}
@@ -283,7 +283,7 @@ export default function About() {
                       experience.technologies?.length > 0 && (
                         <Flex wrap gap="4">
                           {experience.technologies?.map((technology, index) => (
-                            <Badge effect arrow={false}>
+                            <Badge effect arrow={false} key={"badge" + index}>
                               {technology}
                             </Badge>
                           ))}
@@ -318,7 +318,7 @@ export default function About() {
                   </Column>
                 ))}
               </Column>
-            </>
+            </div>
           )}
 
           {about.studies.display && (
