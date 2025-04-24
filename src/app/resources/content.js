@@ -91,7 +91,7 @@ const about = {
     experiences: [
       {
         company: "Sonatafy Technologies",
-        timeframe: "2020 - Present",
+        timeframe: "2020 - 2024",
         role: "Senior Fullstack Software Engineer",
         achievements: [
           <>
