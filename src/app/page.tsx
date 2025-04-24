@@ -191,7 +191,7 @@ export default function About() {
                 {social.map(
                   (item) =>
                     item.link && (
-                      <>
+                      <div key={item.name}>
                         <Button
                           className="s-flex-hide"
                           key={item.name}
@@ -209,7 +209,7 @@ export default function About() {
                           icon={item.icon}
                           variant="secondary"
                         />
-                      </>
+                      </div>
                     )
                 )}
               </Flex>
@@ -283,7 +283,7 @@ export default function About() {
                       experience.technologies?.length > 0 && (
                         <Flex wrap gap="4">
                           {experience.technologies?.map((technology, index) => (
-                            <Badge effect arrow={false}>
+                            <Badge effect arrow={false} key={"badge" + index}>
                               {technology}
                             </Badge>
                           ))}
